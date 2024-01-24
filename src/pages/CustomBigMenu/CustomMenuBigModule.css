@@ -1,0 +1,25 @@
+.slide-right-phone {
+  animation: slideIn 0.5s ease forwards;
+  opacity: 0;
+  transform: translateX(100%); 
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+
+
+.slide-out-phone {
+  animation: slideOut 0.5s ease forwards;
+}
+
+@keyframes slideOut {
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
