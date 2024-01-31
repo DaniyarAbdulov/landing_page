@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
+
+
 const Section2 = () => {
     const buttons = [
         {
-            title: 'Who We Are', text: 'Text accodring to the first button. Lorem ipsum, dolor sit amet consectetur adipisicing elit. '
+            title: 'Who We Are', text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. '
         },
-        { title: 'Our Vision', text: 'Text accodring to the second button. Lorem ipsum, dolor sit amet consectetur adipisicing elit. ' },
-        { title: 'Our History', text: 'Text accodring to the third button. Lorem ipsum, dolor sit amet consectetur adipisicing elit. ' },
+        { title: 'Our Vision', text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. ' },
+        { title: 'Our History', text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. ' },
     ];
 
     const [activeButton, setActiveButton] = useState('Who We Are');
@@ -16,7 +18,7 @@ const Section2 = () => {
     };
 
     return (
-        <section id='our story' className='h-full bg-[#fff] scroll-m-20'>
+        <section id='our story' className='h-full bg-[#eae9e9] scroll-m-20'>
             <div className='flex flex-col mx-10 md:flex-row md:mx-10 md:justify-center lg:items-center md:gap-10 pt-10 md:pt-[px] md:pb-[80px]'>
                 <div className=' mb-10 md:mb-0'>
                     <img src="about-img1.jpg" alt="about" className='rounded-3xl w-full h-full object-cover' />
@@ -35,25 +37,25 @@ const Section2 = () => {
                             Our team comes with the experience and knowledge
                         </h1>
                     </div>
-                    <div className='bg-gray-200 rounded px-2 py-2 justify-center'>
-                        <div className='flex flex-col md:flex-row gap-5 justify-center'>
+                    <div className=' bg-zinc-300 rounded px-2 py-2 flex justify-center'>
+                        <div className='flex flex-col md:flex-row gap-5 justify-center items-center'>
                             {buttons.map((b) => (
-                                <div clas>
+                                <div>
                                     <button
-                                    key={b.title}
-                                    className={`bg-${activeButton === b.title ? '[#155bd5] transition duration-700' : 'white'} text-${activeButton === b.title ? 'white' : 'black'} hover:${activeButton === b.title ? '' : 'text-[#155bd5]'} rounded-sm px-2 py-2`}
-                                    onClick={() => handleButtonClick(b.title)}
-                                >
-                                    {b.title}
-                                </button>
+                                        key={b.title}
+                                        className={`bg-${activeButton === b.title ? '[#155bd5] transition duration-300' : 'white'} text-${activeButton === b.title ? 'white' : 'black'} hover:${activeButton === b.title ? '' : 'text-[#155bd5]'} hover:scale-105 transition duration-300 rounded-sm px-2 py-2 w-[230px] md:w-28 xl:w-[200px]`}
+                                        onClick={() => handleButtonClick(b.title)}
+                                    >
+                                        {b.title}
+                                    </button>
                                 </div>
                             ))}
                         </div>
                     </div>
                     <div>
                         {buttons.map((t) => (
-                            <div key={t.title} className={`${activeButton === t.title ? 'flex' : 'hidden'}`}>
-                                <p>{t.text}</p>
+                            <div key={t.title} className={`${activeButton === t.title ? '' : 'hidden'}`}>
+                                <p className='text-xs sm:flex sm:text-sm md:text-base whitespace-pre-wrap mb-10'>{t.text}</p>
                             </div>
                         ))}
                     </div>

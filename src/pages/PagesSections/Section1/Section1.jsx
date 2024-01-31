@@ -5,7 +5,7 @@ const Section1 = () => {
         <section id='home' className='h-full bg-[#155bd5]  scroll-m-20 '>
             <div className='flex flex-col mx-10 md:flex-row md:mx-10 md:justify-center lg:items-center gap-10 pt-10 md:pt-[px] md:pb-[80px]'>
                 <div className='text-white flex flex-col md:mr-5 list-inside justify-around'>
-                    <h1 className='text-[35px] capitalize whitespace-pre-wrap'>
+                    <h1 className='text-[35px] capitalize whitespace-normal'>
                         Corporate & Business Site Template By Ayro UI.
                     </h1>
                     <p className='mt-[30px] whitespace-pre-wrap'>
@@ -34,7 +34,7 @@ const Section1 = () => {
                 </div>
                 <div>
                 </div>
-                <div className=' mb-10 md:mb-0'>
+                <div className='mb-10 md:mb-0'>
                     <img src='hero-image.jpg' alt='Hero' className='rounded-3xl w-full h-full object-cover' />
                 </div>
             </div>

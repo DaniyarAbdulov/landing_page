@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import CustomMenuBig from '../../pages/CustomBigMenu/CustomMenuBig';
+import CustomMenuBig from './CustomBigMenu/CustomMenuBig';
 import { NavLink } from 'react-router-dom';
-import CustomMiniMenu from '../../pages/CustomMiniMenu/CustomMiniMenu';
+import CustomMiniMenu from './CustomMiniMenu/CustomMiniMenu';
 
 
 
@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const [activeLink, setActiveLink] = useState('#home');
   const [menu, setMenu] = useState(false);
-  const [miniMenu, setMiniMenu] = useState(false); 
+  const [miniMenu, setMiniMenu] = useState(false);
 
   const handleLinkClick = (href) => {
     setActiveLink(href);
