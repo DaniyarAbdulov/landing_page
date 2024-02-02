@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=' w-full h-full bg-[#155bd5]  text-white pt-9 pb-9 sticky top-0'>
+    <nav className=' w-full h-full bg-[#155bd5]  text-white pt-9 pb-9 sticky z-20 top-0'>
       <div className='flex flex-row justify-center md:justify-evenly  gap-20 mx-10 md:gap-10'>
         <div className='flex flex-row gap-16'>
           <div>

@@ -18,7 +18,7 @@ const Section5 = () => {
     return (
         <section id='portfolio' className='h-full bg-white scroll-m-20'>
             <div className='flex flex-col justify-center items-center pt-10 mx-10 gap-10 mb-10'>
-                <div className=' flex flex-col gap-2 items-center justify-center'>
+                <div className='flex flex-col gap-2 items-center justify-center'>
                     <div className=' border-blue-700 border-2 rounded-full px-8 py-2'>
                         <p className=' text-sm text-blue-700 font-semibold'>
                             Our Portfolio
