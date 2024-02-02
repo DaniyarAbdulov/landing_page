@@ -20,7 +20,7 @@ const Section2 = () => {
     return (
         <section id='our story' className='h-full bg-[#eae9e9] scroll-m-20'>
             <div className='flex flex-col mx-10 md:flex-row md:mx-10 md:justify-center lg:items-center md:gap-10 pt-10 md:pt-[px] md:pb-[80px]'>
-                <div className=' mb-10 md:mb-0'>
+                <div className='mb-10 md:mb-0'>
                     <img src="about-img1.jpg" alt="about" className='rounded-3xl w-full h-full object-cover' />
                 </div>
                 <div className='text-black flex flex-col md:mr-5 list-inside justify-center gap-5'>
